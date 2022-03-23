@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Triangulo {
     Scanner sc = new Scanner(System.in);
-
+    Menu menu = new Menu();
     public double perimetro(){
         System.out.println("Formula perimetro triangulo:");
         System.out.println("Perimetro triangulo = lado+lado+lado");
@@ -63,6 +63,7 @@ public class Triangulo {
             System.out.println("| 02:Area                |");
             System.out.println("| 03:Altura              |");
             System.out.println("| 04:Sair                |");
+            System.out.println("| 05:Menu Principal      |");
             System.out.println("|------------------------|");
             System.out.println("Opçao escolhida: ");
 
@@ -73,6 +74,8 @@ public class Triangulo {
                 area();
             } else if (opcao == 3) {
                 altura();
+            }else if(opcao ==5){
+                menu.menu();
             }
         }
     }

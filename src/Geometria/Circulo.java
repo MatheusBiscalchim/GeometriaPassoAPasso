@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Circulo {
     private static double PI = 3.14;
     Scanner sc = new Scanner(System.in);
-
+    Menu menu = new Menu();
     public double circunferencia(){
         System.out.println("Formula circunferencia circulo:");
         System.out.println("Circunferencia circulo = 2*π*r");
@@ -42,6 +42,7 @@ public class Circulo {
             System.out.println("| 01:Perimetro           |");
             System.out.println("| 02:Area                |");
             System.out.println("| 03:Sair                |");
+            System.out.println("| 04:Menu Pricipal       |");
             System.out.println("|------------------------|");
             System.out.println("Opçao escolhida: ");
 
@@ -50,6 +51,8 @@ public class Circulo {
                 circunferencia();
             } else if (opcao == 2) {
                 area();
+            }else if (opcao == 4) {
+                menu.menu();
             }
         }
     }

@@ -32,6 +32,8 @@ public class Menu {
         }else if(opcao == 4){
             Triangulo triangulo = new Triangulo();
             triangulo.menu();
+        }else if(opcao ==5){
+            System.exit(1);
         }
     }
     }

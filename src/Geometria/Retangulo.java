@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Retangulo {
     Scanner sc = new Scanner(System.in);
-
+    Menu menu = new Menu();
     public double perimetro(){
         System.out.println("Formula perimetro retanulo:");
         System.out.println("Perimetro retangulo = base+base+lado+lado");
@@ -61,6 +61,7 @@ public class Retangulo {
             System.out.println("| 02:Area                |");
             System.out.println("| 03:Diagonal            |");
             System.out.println("| 04:Sair                |");
+            System.out.println("| 05:Menu Principal      |");
             System.out.println("|------------------------|");
             System.out.println("Opçao escolhida: ");
 
@@ -71,6 +72,8 @@ public class Retangulo {
                 area();
             } else if (opcao == 3) {
                 diagonal();
+            }else if(opcao ==5){
+                menu.menu();
             }
         }
     }
